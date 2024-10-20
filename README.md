@@ -1,79 +1,93 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native TypeScript Boilerplate
 
-# Getting Started
+A comprehensive React Native TypeScript Boilerplate with core and advanced functionalities essential for modern mobile app development.
 
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## 🚀 Features
 
-## Step 1: Start the Metro Server
+### 1. Dynamic Font and Dimensions
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- Automatically adjust font sizes and UI dimensions based on screen size
+- Ensure consistent look across various devices
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### 2. Theme Support
 
-```bash
-# using npm
-npm start
+- Implement light and dark mode
+- Easily customizable theme settings
+- Smooth transitions between themes
 
-# OR using Yarn
-yarn start
-```
+### 3. Multilingual Localization
 
-## Step 2: Start your Application
+- Support multiple languages out of the box
+- Easy-to-use translation system
+- Runtime language switching
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### 4. Navigation
 
-### For Android
+- Drawer Navigation: For main menu and app sections
+- Stack Navigation: For hierarchical screens
+- Bottom Tabs: For quick access to primary features
 
-```bash
-# using npm
-npm run android
+### 5. State Management
 
-# OR using Yarn
-yarn android
-```
+- Integrated Redux for efficient state management
+- Pre-configured store and reducers
+- Easy-to-follow structure for adding new states
 
-### For iOS
+### 6. Custom Components
 
-```bash
-# using npm
-npm run ios
+- Modal: Customizable modal component for pop-ups and alerts
+- TextInput: Enhanced text input with built-in validation
+- Buttons: Various button styles (primary, secondary, outline)
+- Dropdown Picker: Custom dropdown for selections
+- ImageRender: Optimized image rendering component
 
-# OR using Yarn
-yarn ios
-```
+### 7. Toast Notifications
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+- Custom toast component for non-intrusive user feedback
+- Multiple toast types (success, error, info, warning)
+- Customizable duration and position
+- Queue system for multiple toasts
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+### 8. Axios API Setup
 
-## Step 3: Modifying your App
+- Pre-configured Axios instance for API calls
+- Interceptors for request and response handling
+- Global error handling for API requests
+- Easy-to-use API service structure
 
-Now that you have successfully run the app, let's modify it.
+## 🛠 Getting Started
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+1. Clone the repository:
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+   ```
+   git clone https://github.com/yourusername/react-native-typescript-boilerplate.git
+   ```
 
-## Congratulations! :tada:
+2. Install dependencies:
 
-You've successfully run and modified your React Native App. :partying_face:
+   ```
+   cd react-native-typescript-boilerplate
+   npm install
+   ```
 
-### Now what?
+3. Run the app:
+   - For iOS:
+     ```
+     npx react-native run-ios
+     ```
+   - For Android:
+     ```
+     npx react-native run-android
+     ```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+## 📚 Documentation
 
-# Troubleshooting
+We are currently working on comprehensive documentation for this boilerplate. Once completed, it will provide detailed information on how to use and customize each feature.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## 🤝 Contributing
 
-# Learn More
+Contributions, issues, and feature requests are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started.
 
-To learn more about React Native, take a look at the following resources:
+## 📝 License
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is [MIT](LICENSE) licensed.
