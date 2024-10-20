@@ -63,14 +63,34 @@ A comprehensive React Native TypeScript Boilerplate with core and advanced funct
    git clone https://github.com/yourusername/react-native-typescript-boilerplate.git
    ```
 
-2. Install dependencies:
+2. Rename the project:
+
+   - Install the React Native Rename package globally:
+     ```
+     npm install -g react-native-rename
+     ```
+   - Navigate to the project directory:
+     ```
+     cd react-native-typescript-boilerplate
+     ```
+   - Rename the project (replace "YourNewAppName" with your desired app name):
+     ```
+     npx react-native-rename "YourNewAppName"
+     ```
+   - For iOS, you'll need to update the Podfile. Open `ios/Podfile` and replace all occurrences of 'react_native_typescript_boilerplate' with 'YourNewAppName'.
+   - Re-install pods:
+     ```
+     cd ios && pod install && cd ..
+     ```
+
+3. Install dependencies:
 
    ```
-   cd react-native-typescript-boilerplate
    npm install
    ```
 
-3. Run the app:
+4. Run the app:
+
    - For iOS:
      ```
      npx react-native run-ios
@@ -80,9 +100,18 @@ A comprehensive React Native TypeScript Boilerplate with core and advanced funct
      npx react-native run-android
      ```
 
+5. Update app display name (optional):
+   - iOS: Open `ios/YourNewAppName/Info.plist` and modify the value for `CFBundleDisplayName`
+   - Android: Open `android/app/src/main/res/values/strings.xml` and modify the value for `app_name`
+
 ## 📚 Documentation
 
 We are currently working on comprehensive documentation for this boilerplate. Once completed, it will provide detailed information on how to use and customize each feature.
+
+## 🌿 Branches
+
+- **main**: This branch contains the stable, polished, and correctly working code. Use this branch for production-ready implementations.
+- **dev**: This branch is for beta or experimental work. It may contain new features or changes that are still being tested and refined.
 
 ## 🤝 Contributing
 
