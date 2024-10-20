@@ -1,79 +1,110 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native TypeScript Boilerplate
 
-# Getting Started
+A comprehensive React Native TypeScript Boilerplate with core and advanced functionalities essential for modern mobile app development.
 
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## 🚀 Features
 
-## Step 1: Start the Metro Server
+### 1. Dynamic Font and Dimensions
+- Automatically adjust font sizes and UI dimensions based on screen size
+- Ensure consistent look across various devices
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### 2. Theme Support
+- Implement light and dark mode
+- Easily customizable theme settings
+- Smooth transitions between themes
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### 3. Multilingual Localization
+- Support multiple languages out of the box
+- Easy-to-use translation system
+- Runtime language switching
 
-```bash
-# using npm
-npm start
+### 4. Navigation
+- Drawer Navigation: For main menu and app sections
+- Stack Navigation: For hierarchical screens
+- Bottom Tabs: For quick access to primary features
 
-# OR using Yarn
-yarn start
-```
+### 5. State Management
+- Integrated Redux for efficient state management
+- Pre-configured store and reducers
+- Easy-to-follow structure for adding new states
 
-## Step 2: Start your Application
+### 6. Custom Components
+- Modal: Customizable modal component for pop-ups and alerts
+- TextInput: Enhanced text input with built-in validation
+- Buttons: Various button styles (primary, secondary, outline)
+- Dropdown Picker: Custom dropdown for selections
+- ImageRender: Optimized image rendering component
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### 7. Toast Notifications
+- Custom toast component for non-intrusive user feedback
+- Multiple toast types (success, error, info, warning)
+- Customizable duration and position
+- Queue system for multiple toasts
 
-### For Android
+### 8. Axios API Setup
+- Pre-configured Axios instance for API calls
+- Interceptors for request and response handling
+- Global error handling for API requests
+- Easy-to-use API service structure
 
-```bash
-# using npm
-npm run android
+## 🛠 Getting Started
 
-# OR using Yarn
-yarn android
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/react-native-typescript-boilerplate.git
+   ```
 
-### For iOS
+2. Rename the project:
+   - Install the React Native Rename package globally:
+     ```
+     npm install -g react-native-rename
+     ```
+   - Navigate to the project directory:
+     ```
+     cd react-native-typescript-boilerplate
+     ```
+   - Rename the project (replace "YourNewAppName" with your desired app name):
+     ```
+     npx react-native-rename "YourNewAppName"
+     ```
+   - For iOS, you'll need to update the Podfile. Open `ios/Podfile` and replace all occurrences of 'react_native_typescript_boilerplate' with 'YourNewAppName'.
+   - Re-install pods:
+     ```
+     cd ios && pod install && cd ..
+     ```
 
-```bash
-# using npm
-npm run ios
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-# OR using Yarn
-yarn ios
-```
+4. Run the app:
+   - For iOS:
+     ```
+     npx react-native run-ios
+     ```
+   - For Android:
+     ```
+     npx react-native run-android
+     ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+5. Update app display name (optional):
+   - iOS: Open `ios/YourNewAppName/Info.plist` and modify the value for `CFBundleDisplayName`
+   - Android: Open `android/app/src/main/res/values/strings.xml` and modify the value for `app_name`
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## 📚 Documentation
 
-## Step 3: Modifying your App
+We are currently working on comprehensive documentation for this boilerplate. Once completed, it will provide detailed information on how to use and customize each feature.
 
-Now that you have successfully run the app, let's modify it.
+## 🌿 Branches
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- **main**: This branch contains the stable, polished, and correctly working code. Use this branch for production-ready implementations.
+- **dev**: This branch is for beta or experimental work. It may contain new features or changes that are still being tested and refined.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## 🤝 Contributing
 
-## Congratulations! :tada:
+Contributions, issues, and feature requests are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started.
 
-You've successfully run and modified your React Native App. :partying_face:
+## 📝 License
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is [MIT](LICENSE) licensed.
