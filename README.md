@@ -35,6 +35,18 @@ A comprehensive React Native TypeScript Boilerplate with core and advanced funct
 - Dropdown Picker: Custom dropdown for selections
 - ImageRender: Optimized image rendering component
 
+### 7. Toast Notifications
+- Custom toast component for non-intrusive user feedback
+- Multiple toast types (success, error, info, warning)
+- Customizable duration and position
+- Queue system for multiple toasts
+
+### 8. Axios API Setup
+- Pre-configured Axios instance for API calls
+- Interceptors for request and response handling
+- Global error handling for API requests
+- Easy-to-use API service structure
+
 ## 🛠 Getting Started
 
 1. Clone the repository:
@@ -60,7 +72,7 @@ A comprehensive React Native TypeScript Boilerplate with core and advanced funct
 
 ## 📚 Documentation
 
-(Add links or brief explanations for each major feature)
+We are currently working on comprehensive documentation for this boilerplate. Once completed, it will provide detailed information on how to use and customize each feature.
 
 ## 🤝 Contributing
 
